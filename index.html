@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Meal Management software</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="sidebar-section" id="sidebar-section">
+        <div class="logo">
+              <div class="logo-icon">
+                  <img src="https://arctic.ui-lib.com/preview/layout1/assets/images/arctic-admin-circle.svg" alt="">
+              </div>
+             <div class="title">
+                 <h2>Arctic</h2>
+             </div>
+             <div class="nav-bar">
+                 <i class="fa fa-bars"></i>
+             </div>
+        </div>
+        <div class="admin-profile">
+            <div class="admin-img">
+                <img src="https://arctic.ui-lib.com/preview/layout1/assets/images/faces/1.jpg" alt="admin"/>
+            </div>
+            <div class="admin-name-and-sitting">
+                 <h2>Watson Joyce</h2>
+                 <div class="sitting-pannel">
+                       <ul>
+                           <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                           <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                           <li><a href="#"><i class="fa fa-sign-out"></i></a></li>
+                       </ul>
+                 </div>
+            </div>
+        </div>
+        <div class="manu-bar">
+             <ul>
+                 <li><a href="#"><i class="fa fa-th-large"></i>Dashboards</a></li>
+                 <li><a href="#"><i class="fa fa-list"></i>Form</a></li>
+                 <li><a href="#"><i class="fa fa-book"></i>Apps</a></li>
+                 <li><a href="#"><i class="fa fa-map"></i>Blocks</a></li>
+                 <li><a href="#"><i class="fa fa-calendar"></i>Component</a></li>
+                 <li><a href="#"><i class="fa fa-microchip"></i>Widget</a></li>
+                 <li><a href="#"><i class="fa fa-table"></i>Datatable</a></li>
+                 <li><a href="#"><i class="fa fa-list"></i>Pages</a></li>
+             </ul>
+        </div>
+    </div>
+    <div class="content-section">
+          <div class="header">
+               <div class="small-divice-header">
+                      <div class="small-divice-logo">
+                         <img src="https://arctic.ui-lib.com/preview/layout1/assets/images/arctic-admin-circle.svg" alt="">
+                      </div>
+                      <div class="small-divice-bar">
+                           <i class="fa fa-bars" id="nav-bar"></i>
+                           <i class="material-icons" id="more_vert">more_vert</i>
+                      </div>
+               </div>
+               <div class="header-top">
+                    <div class="header-top-left">
+                         <h2>Dashboard</h2>
+                         <h2>Component</h2>
+                    </div>
+                    <div class="header-top-right">
+                        <div class="notification">
+                             <i class="fa fa-bell"></i>
+                             <span>4</span>
+                        </div>
+                        <div class="profile">
+                              <h2>Watson Joyce</h2>
+                              <img src="https://arctic.ui-lib.com/preview/layout1/assets/images/faces/1.jpg" alt="admin"/>
+                        </div>
+                    </div>
+               </div>
+               <div class="header-bottom">
+                     <div class="header-bottom-left">
+                           <ul>
+                                <li><i class="fa fa-home"></i>Dashboard</li>
+                                <li><i class="fa fa-bar-chart"></i>Analytic</li>
+                           </ul>
+                     </div>
+                     <div class="header-bottom-right">
+                          <div class="date">
+                               <i class="fa fa-calendar"></i>
+                               <p>Aug-10 - 2021</p>
+                          </div>
+                     </div>
+               </div>
+          </div>
+          <div class="calculation-overview">
+               <div class="all-calculation">
+                    <div class="single-calulation" id="member">
+                        <div class="calculation-box">
+                           <i class="material-icons">group</i>
+                           <h5>Total Member</h5>
+                           <h4 id="total_member">2</h4>
+                         </div>
+                    </div>
+                    <div class="single-calulation" id="submission">
+                        <div class="calculation-box"> 
+                           <i class="material-icons">group</i>
+                           <h5>Total Submission</h5>
+                           <h4 id="total_submission">12</h4>
+                       </div>
+                    </div>
+                    <div class="single-calulation" id="cost">
+                        <div class="calculation-box">
+                           <i class="material-icons">group</i>
+                           <h5>Total Cost</h5>
+                           <h4 id="total_cost">10</h4>
+                        </div>
+                    </div>
+                    <div class="single-calulation" id="meal">
+                        <div class="calculation-box">
+                          <i class="material-icons">group</i>
+                          <h5>Total Meal</h5>
+                          <h4 id="total_meal">5</h4>
+                        </div>
+                   </div>
+                   <div class="single-calulation" id="rate">
+                      <div class="calculation-box">
+                        <i class="material-icons">group</i>
+                        <h5>Meal Rate</h5>
+                        <h4 id="meal_rate">2</h4>
+                      </div> 
+                   </div>
+                   <div class="single-calulation" id="remaining">
+                      <div class="calculation-box">
+                         <i class="material-icons">group</i>
+                         <h5>Remaining Balance</h5>
+                         <h4 id="remaining_balance">2</h4>
+                      </div>  
+                   </div>
+               </div>
+          </div>
+          <div class="footer">
+                <p>&copy; 2021 - All right reserve </p>
+                <span id="modal-close"></span>
+          </div>
+    </div>
+</div>
+<script src="javascript/main.js"></script>
+</body>
+</html>

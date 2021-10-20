@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rental Shop Management software - Item</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="sidebar-section" id="sidebar-section">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="https://arctic.ui-lib.com/preview/layout1/assets/images/arctic-admin-circle.svg" alt="">
+                </div>
+                <div class="title">
+                    <h2>Arctic</h2>
+                </div>
+                <div class="nav-bar">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+            <div class="admin-profile">
+                <div class="admin-img">
+                    <img src="https://arctic.ui-lib.com/preview/layout1/assets/images/faces/1.jpg" alt="admin" />
+                </div>
+                <div class="admin-name-and-sitting">
+                    <h2>Watson Joyce</h2>
+                    <div class="sitting-pannel">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            <li><a href="#"><i class="fa fa-sign-out"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="manu-bar">
+                <ul>
+                    <li><a href="#"><i class="fa fa-th-large"></i>Dashboards</a></li>
+                    <li><a href="#"><i class="fa fa-list"></i>Form</a></li>
+                    <li><a href="#"><i class="fa fa-book"></i>Apps</a></li>
+                    <li><a href="#"><i class="fa fa-map"></i>Blocks</a></li>
+                    <li><a href="#"><i class="fa fa-calendar"></i>Component</a></li>
+                    <li><a href="#"><i class="fa fa-microchip"></i>Widget</a></li>
+                    <li><a href="#"><i class="fa fa-table"></i>Datatable</a></li>
+
+                    <li><a href="#"><i class="fa fa-list"></i>Pages</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-section">
+            <div class="header">
+                <div class="small-divice-header">
+                    <div class="small-divice-logo">
+                        <img src="https://arctic.ui-lib.com/preview/layout1/assets/images/arctic-admin-circle.svg"
+                            alt="">
+                    </div>
+                    <div class="small-divice-bar">
+                        <i class="fa fa-bars" id="nav-bar"></i>
+                        <i class="material-icons" id="more_vert">more_vert</i>
+                    </div>
+                </div>
+                <div class="header-top">
+                    <div class="header-top-left">
+                        <h2>Dashboard</h2>
+                        <h2>Component</h2>
+                    </div>
+                    <div class="header-top-right">
+                        <div class="notification">
+                            <i class="fa fa-bell"></i>
+                            <span>4</span>
+                        </div>
+                        <div class="profile">
+                            <h2>Watson Joyce</h2>
+                            <img src="https://arctic.ui-lib.com/preview/layout1/assets/images/faces/1.jpg"
+                                alt="admin" />
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="header-bottom-left">
+                        <ul>
+                            <li><i class="fa fa-home"></i>Dashboard</li>
+                            <li><i class="fa fa-bar-chart"></i>Analytic</li>
+                        </ul>
+                    </div>
+                    <div class="header-bottom-right">
+                        <div class="date">
+                            <i class="fa fa-calendar"></i>
+                            <p>Aug-10 - 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--data table-->
+            <div class="table">
+                <div class="table-header">
+                    <h2>Items list</h2>
+                    <a href="#" id="show_modal"><i class="fa fa-plus"></i>add new item</a>
+                </div>
+                <div class="filtering-search">
+                    <form>
+                        <div class="field-name">
+                            <select>
+                                <option value="Name">Name</option>
+                                <option value="Email">E-mail</option>
+                                <option value="Phone">Phone</option>
+                            </select>
+                        </div>
+                        <div class="input-item">
+                            <input type="text" name="item" placeholder="search....">
+                        </div>
+                    </form>
+                </div>
+                <div class="item-list" id="table_item">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sl</th>
+                                <th>Item Name</th>
+                                <th>Price P-Day</th>
+                                <th>Price P-Week</th>
+                                <th>Quantiry</th>
+                                <th>Stock</th>
+                                <th>Rent</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination">
+                    <span>Prev</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>Next</span>
+                </div>
+            </div>
+            <!--//-->
+
+
+            <!--rent form-->
+            <div class="card-form">
+                <div class="single-item">
+                    <div class="item-name">
+                        <h3>Hadassah Hancock</h3>
+                    </div>
+                    <div class="item-qty">
+                        <h3>2</h3>
+                    </div>
+                    <div class="item-price">
+                        <h3>$20</h3>
+                    </div>
+                    <div class="time-duration">
+                        <h3>2 days</h3>
+                    </div>
+                    <div class="action"><i class="fa fa-trash"></i></div>
+                </div>
+                <div class="single-item">
+                    <div class="item-name">
+                        <h3>Frances Carson</h3>
+                    </div>
+                    <div class="item-qty">
+                        <h3>1</h3>
+                    </div>
+                    <div class="item-price">
+                        <h3>$30</h3>
+                    </div>
+                    <div class="time-duration">
+                        <h3>3 days</h3>
+                    </div>
+                    <div class="action"><i class="fa fa-trash"></i></div>
+                </div>
+                <div class="single-item">
+                    <div class="item-name">
+                        <h3>Amelia Wong</h3>
+                    </div>
+                    <div class="item-qty">
+                        <h3>1</h3>
+                    </div>
+                    <div class="item-price">
+                        <h3>$35</h3>
+                    </div>
+                    <div class="time-duration">
+                        <h3>1 week</h3>
+                    </div>
+                    <div class="action"><i class="fa fa-trash"></i></div>
+                </div>
+                <div class="single-item">
+                    <div class="item-name">
+                        <h3>3 Items</h3>
+                    </div>
+                    <div class="item-qty">
+                        <h3>Qty: 4</h3>
+                    </div>
+                    <div class="item-price">
+                        <h3>Total: $85</h3>
+                    </div>
+                    <div class="time-duration">
+                        <h3>12 Days</h3>
+                    </div>
+                    <div class="action"></div>
+                </div>
+
+            </div>
+            <!---->
+
+            <div class="footer">
+                <p>&copy; 2021 - All right reserved </p>
+            </div>
+
+            <!--modal-->
+            <div class="modal-overlay" id="modal">
+                <div class="modal-section">
+                    <div class="modal-header">
+                        <h3>Add New Item</h3>
+                        <a href="#" id="show_modal"> <i class="fa fa-close" id="modal-close"></i></a>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form">
+                            <form id="item_form" class="form_data">
+                                <div class="input-text">
+                                    <span class="span">Item Name:</span>
+                                    <input type="text" name="item_name" id="item_name" placeholder="Item Name" />
+                                </div>
+                                <div class="input-text">
+                                    <span class="span">Item Quantiry:</span>
+                                    <input type="text" name="item_quantity" id="item_quantity"
+                                        placeholder="Item Quantity" />
+                                </div>
+                                <div class="input-text">
+                                    <span class="span">Price Per-day:</span>
+                                    <input type="text" name="price_p_day" id="price_p_day"
+                                        placeholder="Price Per-day" />
+                                </div>
+                                <div class="input-text">
+                                    <span class="span">Price Per-week:</span>
+                                    <input type="text" name="price_p_week" id="price_p_week"
+                                        placeholder="Price Per-week" />
+                                </div>
+
+                                <div class="select-box">
+                                    <span class="span">Category:</span>
+                                    <select name="category" id="category">
+                                        <option value="0" selected="selected" disabled>Select Category</option>
+                                        <!--  <option value="1">Category 1</option>
+                                        <option value="2">Category 2</option> -->
+                                    </select>
+                                </div>
+                                <div class="form-submit-button">
+                                    <button type="submit" id="form-submit-btn">save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--//-->
+
+
+        </div>
+    </div>
+    <script type="module" src="javascript/items/index.js"></script>
+</body>
+
+</html>
